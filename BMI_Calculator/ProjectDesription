@@ -1,0 +1,35 @@
+Project Name:
+
+        BMI(Body-Mass-Index) Calculator.
+
+BMI Definition:
+
+        Body Mass Index (BMI) is a persons weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems,but it does not diagnose the body fatness or health of an individual.
+
+BMI ranges:
+
+        1) Below 18.5 you are in the underweight range.
+        2) Between 18.5 and 24.9 you are in the healthy weight range.
+        3) Between 25 and 29.9  you are in the overweight range.
+        4) 30 or over you are in the obese range.
+
+Using Tool:
+
+       Spring Tool suite.
+
+Maven Dependencies:
+
+       1.Apache-Tomcat-jasper.
+       2.Spring-Starter-web.
+
+Design Pattern:
+
+       MVC(Model View Controller).
+
+Details and Description:
+
+       First create Welcome page in .jsp type for get user inputs are Name,Gender,Height and Weight.It contain submit button for get BMI calculation and reset button for reset the text box given values.Second page  also .jsp type Show Given Name,Gender,Heigth,Weigth,BMI Calculation and BMI Status.It contain Back button for going prevoius page.This two files are act View.The User.java file is POJO type which means Plain Old Java Object it contains the data type of given details by the user.The Service.java file contains three method.The first method used for add user given details in map object as value and key as declared userid in int value and it is preincrement,this method return User class object.The second Method used for calculate the bmi value by using Math class and return the double value.The Third Method is used for Find BMI Status and it return String Value.The ServletController.java file is an Controller it controls the Model and view files.The Services.java file is autowired and it creating object by following the dependency injection method.It contains two methods first method is used for Mapping the first .jsp file to get user input and return String value.Second method used for Mapping to show result,it contains three object from diffrent  class and data type for get user details,calculation and status. ModelAndView class object are used to add object to the model and this object is setView method for show result in result page and this method return the ModelandView object type.
+       
+    
+
+
